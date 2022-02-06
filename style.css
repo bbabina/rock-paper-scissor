@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    height: 45vh;
+}
+.container{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+.score{
+    padding: 50px;
+    height:15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(7, 7, 80);
+    color: white;
+}
+.score h2{
+    font-size: 30px;
+}
+.score p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.start{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+    /* during js */
+    transition: opacity 0.5s ease; 
+}
+.start h1{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(166, 3, 3);
+}
+.start button,
+.result button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(7, 7, 80);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;   
+}
+
+button:hover{
+    background-color: rgb(166, 3, 3);
+    color: white;
+}
+
+.result{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* during js */
+    transition: opacity 0.5s ease 0.5s; 
+    
+}
+.result h2{
+    color: rgb(166, 3, 3);
+}
+
+.winner{
+    text-align: center;
+    font-size: 50px;
+}
+.hands, .options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.player-hand{
+    transform: rotateY(180deg);
+}
+
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
